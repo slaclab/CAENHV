@@ -1,0 +1,38 @@
+# RELEASE.local
+#
+# Read definitions of:
+#       EPICS_SITE_TOP
+#       BASE_MODULE_VERSION
+#       EPICS_MODULES
+# from one of the following options
+-include $(TOP)/RELEASE_SITE
+
+# ==========================================================
+# Define the version strings for all needed modules
+# Use naming pattern:
+#   FOO_MODULE_VERSION = R1.2
+# so scripts can extract version strings
+# Don't set your version to anything such as "test" that
+# could match a directory name.
+# ==========================================================
+IOCADMIN_MODULE_VERSION=R3.1.15-1.0.0
+AUTOSAVE_MODULE_VERSION=R5.7.1-0.1.0
+ASYN_MODULE_VERSION=R4.31-0.1.0
+CAENHVASYN_MODULE_VERSION=master
+
+# ==========================================================
+# Define module paths using pattern
+# FOO = $(EPICS_MODULES)/foo/$(FOO_MODULE_VERSION)
+#  or
+# FOO = /Full/Path/To/Development/Version
+# ==========================================================
+IOCADMIN=$(EPICS_MODULES)/iocAdmin/$(IOCADMIN_MODULE_VERSION)
+AUTOSAVE=$(EPICS_MODULES)/autosave/$(AUTOSAVE_MODULE_VERSION)
+ASYN=$(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
+CAENHVASYN=$(EPICS_MODULES)/CAENHVAsyn/$(CAENHVASYN_MODULE_VERSION)
+
+# =====================================================================
+# Set EPICS_BASE last so it appears last in the DB, DBD, INCLUDE, and LIB search paths
+# ====================================================================
+EPICS_BASE=$(BASE_SITE_TOP)/$(BASE_MODULE_VERSION)
+

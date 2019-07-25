@@ -30,11 +30,12 @@ CAENHV_registerRecordDeviceDriver(pdbbase)
 
 # CAENHVAsynConfig(
 #     portName,     # Asyn port name
+#     systemType,   # Type of system
 #     ipAddr,       # Power supply IP address 
 #     userName,     # User name 
 #     password)     # Password
-CAENHVAsynConfig("${CAENHVASYN_PORT}","134.79.219.251","admin","admin")
-#CAENHVAsynConfig("${CAENHVASYN_PORT}","hvps-b084-mp01","admin","admin")
+CAENHVAsynConfig("${CAENHVASYN_PORT}",3,"134.79.219.251","admin","admin")
+#CAENHVAsynConfig("${CAENHVASYN_PORT}",3,"hvps-b084-mp01","admin","admin")
 
 # ===========================================
 #               ASYN MASKS

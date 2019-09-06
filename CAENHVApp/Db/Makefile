@@ -11,6 +11,14 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
 #DB += xxx.db
+DB_INSTALLS += $(CAENHVASYN)/db/ai.template
+DB_INSTALLS += $(CAENHVASYN)/db/ao.template
+DB_INSTALLS += $(CAENHVASYN)/db/bi.template
+DB_INSTALLS += $(CAENHVASYN)/db/bo.template
+DB_INSTALLS += $(CAENHVASYN)/db/stringin.template
+DB_INSTALLS += $(CAENHVASYN)/db/stringout.template
+DB_INSTALLS += $(CAENHVASYN)/db/longin.template
+DB_INSTALLS += $(CAENHVASYN)/db/longout.template
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

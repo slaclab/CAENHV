@@ -10,7 +10,9 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
-#DB += xxx.db
+
+# These records are used when the auto-generation of PVs
+# is enabled.
 DB_INSTALLS += $(CAENHVASYN)/db/ai.template
 DB_INSTALLS += $(CAENHVASYN)/db/ao.template
 DB_INSTALLS += $(CAENHVASYN)/db/bi.template
@@ -19,6 +21,10 @@ DB_INSTALLS += $(CAENHVASYN)/db/stringin.template
 DB_INSTALLS += $(CAENHVASYN)/db/stringout.template
 DB_INSTALLS += $(CAENHVASYN)/db/longin.template
 DB_INSTALLS += $(CAENHVASYN)/db/longout.template
+
+# These are application specific PV definitions
+DB += b921.db
+DB += b913.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

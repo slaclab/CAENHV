@@ -1,0 +1,23 @@
+record(ao,      "$(P):$(AREA):$(POS):HV_CTL") {
+    field(PINI, "NO")
+    field(DESC, "Slot $(SLOT), Ch $(CH), V0Set")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(EGU,  "V")
+    field(LOPR, "0")
+    field(HOPR, "3000")
+    field(DRVL, "0")
+    field(DRVH, "3000")
+    field(OUT,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
+}
+
+record(ai,      "$(P):$(AREA):$(POS):HV_CTL_RBV") {
+    field(PINI, "YES")
+    field(DESC, "Slot $(SLOT), Ch $(CH), V0Set RBV")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "1 second")
+    field(EGU,  "V")
+    field(LOPR, "0")
+    field(HOPR, "3000")
+    field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
+}

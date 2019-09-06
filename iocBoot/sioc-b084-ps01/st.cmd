@@ -56,8 +56,16 @@ asynSetTraceMask("${CAENHVASYN_PORT}",0, 0)
 # ===========================================
 #               DB LOADING
 # ===========================================
-## Load record instances
-#dbLoadRecords("db/CAENHV.db","user=jvasquez")
+
+# Database examples, you normally should use only one of these
+# at a given time, and without autogeneration of PV (even though
+# it is possible to use it at the same time)
+
+## System in B921
+#dbLoadRecords("db/b921.db","P=CBLM,PORT=${CAENHVASYN_PORT}")
+
+## System in B913
+#dbLoadRecords("db/b913.db","P=CBLM,PORT=${CAENHVASYN_PORT}")
 
 # ===========================================
 #           SETUP AUTOSAVE/RESTORE

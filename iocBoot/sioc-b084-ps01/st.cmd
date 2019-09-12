@@ -89,7 +89,7 @@ set_savefile_path("${IOC_DATA}/${IOC}/autosave")
 # Prefix that is use to update save/restore status database
 # records
 save_restoreSet_UseStatusPVs(1)
-save_restoreSet_status_prefix("${PREFIX_MPS_BASE}:")
+save_restoreSet_status_prefix("HVPS:B084:MP01:")
 
 ## Restore datasets
 set_pass0_restoreFile("info_positions.sav")

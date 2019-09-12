@@ -10,8 +10,8 @@
 # ===========================================
 
 # Asyn port name
-epicsEnvSet("CAENHVASYN_PORT_B921", "CAENHVASYN_PORT_B921")
-epicsEnvSet("CAENHVASYN_PORT_B913", "CAENHVASYN_PORT_B913")
+epicsEnvSet("CAENHVASYN_PORT_B921", "CAEN_HVPS_B921")
+epicsEnvSet("CAENHVASYN_PORT_B913", "CAEN_HVPS_B913")
 
 # ======================================
 # Start from TOP

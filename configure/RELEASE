@@ -18,7 +18,7 @@
 IOCADMIN_MODULE_VERSION=R3.1.15-1.0.0
 AUTOSAVE_MODULE_VERSION=R5.7.1-0.1.0
 ASYN_MODULE_VERSION=R4.31-0.1.0
-CAENHVASYN_MODULE_VERSION=R1.1.0
+CAENHVASYN_MODULE_VERSION=R1.1.1
 
 # ==========================================================
 # Define module paths using pattern

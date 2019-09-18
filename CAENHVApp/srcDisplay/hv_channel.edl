@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1231
-y 869
+x 374
+y 150
 w 780
 h 620
 font "helvetica-medium-r-10.0"
@@ -2185,8 +2185,8 @@ bgColor index 4
 inconsistentColor index 4
 topShadowColor index 1
 botShadowColor index 11
-controlPv "HVPS:B084:MP01:S00:C00:PW:St"
-indicatorPv "HVPS:B084:MP01:S00:C00:PW:Rd"
+controlPv "HVPS:B084:MP01:S$(SLOT):C$(CH):PW:St"
+indicatorPv "HVPS:B084:MP01:S$(SLOT):C$(CH):PW:Rd"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -2242,8 +2242,8 @@ bgColor index 4
 inconsistentColor index 4
 topShadowColor index 1
 botShadowColor index 11
-controlPv "HVPS:B084:MP01:S00:C00:PON:St"
-indicatorPv "HVPS:B084:MP01:S00:C00:PON:Rd"
+controlPv "HVPS:B084:MP01:S$(SLOT):C$(CH):PON:St"
+indicatorPv "HVPS:B084:MP01:S$(SLOT):C$(CH):PON:Rd"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 
@@ -2299,8 +2299,8 @@ bgColor index 4
 inconsistentColor index 4
 topShadowColor index 1
 botShadowColor index 11
-controlPv "HVPS:B084:MP01:S00:C00:PDWN:St"
-indicatorPv "HVPS:B084:MP01:S00:C00:PDWN:Rd"
+controlPv "HVPS:B084:MP01:S$(SLOT):C$(CH):PDWN:St"
+indicatorPv "HVPS:B084:MP01:S$(SLOT):C$(CH):PDWN:Rd"
 font "helvetica-medium-r-12.0"
 endObjectProperties
 

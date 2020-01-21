@@ -37,12 +37,14 @@ CAENHV_DBD += devIocStats.dbd
 CAENHV_DBD += asSupport.dbd
 CAENHV_DBD += asyn.dbd
 CAENHV_DBD += CAENHVAsyn.dbd
+CAENHV_DBD += devSeqCar.dbd
 
 # Add all the support libraries needed by this IOC
 CAENHV_LIBS += devIocStats
 CAENHV_LIBS += autosave
 CAENHV_LIBS += CAENHVAsyn
 CAENHV_LIBS += asyn
+CAENHV_LIBS += seqCar seq pv
 
 # CAENHV_registerRecordDeviceDriver.cpp derives from CAENHV.dbd
 CAENHV_SRCS += CAENHV_registerRecordDeviceDriver.cpp

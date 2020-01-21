@@ -9,6 +9,7 @@ record(ao,      "$(P):$(AREA):$(POS):HV_CTL") {
     field(DRVL, "0")
     field(DRVH, "3000")
     field(OUT,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
+    info(autosaveFields, "VAL")
 }
 
 record(ai,      "$(P):$(AREA):$(POS):HV_CTL_RBV") {
@@ -20,4 +21,5 @@ record(ai,      "$(P):$(AREA):$(POS):HV_CTL_RBV") {
     field(LOPR, "0")
     field(HOPR, "3000")
     field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
+    info(autosaveFields, "VAL")
 }

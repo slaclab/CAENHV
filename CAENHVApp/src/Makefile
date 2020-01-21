@@ -56,6 +56,14 @@ CAENHV_SRCS_vxWorks += -nil-
 # Finally link to the EPICS Base libraries
 CAENHV_LIBS += $(EPICS_BASE_IOC_LIBS)
 
+# Link QSRV (pvAccess Server) if available
+#ifdef EPICS_QSRV_MAJOR_VERSION
+#   CAENHV_LIBS +=git  qsrv
+#   CAENHV_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+#   CAENHV_DBD += PVAServerRegister.dbd
+#   CAENHV_DBD += qsrv.dbd
+#endif
+
 #===========================
 
 include $(TOP)/configure/RULES

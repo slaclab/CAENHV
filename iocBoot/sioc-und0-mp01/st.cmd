@@ -42,10 +42,10 @@ CAENHV_registerRecordDeviceDriver(pdbbase)
 #     password)     # Password
 
 # Crate located in B913 (node name: hvps-und0-mp01)
-CAENHVAsynConfig("${CAENHVASYN_PORT_B913}",3,"hvps-und0-mp01","admin","admin")
+CAENHVAsynConfig("${CAENHVASYN_PORT_B913}",3,"172.27.13.34","admin","admin")
 
 # Crate located in B921 (node name: hvps-und0-mp02)
-CAENHVAsynConfig("${CAENHVASYN_PORT_B921}",3,"hvps-und0-mp02","admin","admin")
+CAENHVAsynConfig("${CAENHVASYN_PORT_B921}",3,"172.27.13.35","admin","admin")
 
 # ===========================================
 #               ASYN MASKS

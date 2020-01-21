@@ -3,6 +3,10 @@
 Release notes for the CAEN HV Power Supply IOC.
 
 ## Releases:
+* R0.0.3: 2020-01-21 J. Mock
+  * Fix bugs
+  * add some features
+
 * R0.0.2: 2020-01-21 J. Mock
   * Fix bugs
   * add some features

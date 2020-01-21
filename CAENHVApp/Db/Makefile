@@ -36,6 +36,7 @@ DB_INSTALLS += $(IOCADMIN)/db/iocScanMonSum.db
 DB_INSTALLS += $(IOCADMIN)/db/iocScanMon.db
 DB_INSTALLS += $(SNCSEQ)/db/devSeqCar.db
 DB_INSTALLS += $(AUTOSAVE)/db/save_restoreStatus.db
+IOCRELEASE_DB += iocRelease.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

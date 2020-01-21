@@ -21,6 +21,7 @@ caenhvwrapper_DIR = $(CAENHVWRAPPER_LIB)
 # LINK "NON EPICS" EXTERNAL PACKAGE LIBRARIES STATICALLY
 # =======================================================
 USR_LIBS_Linux += caenhvwrapper
+#USR_LDFLAGS += $(addprefix -L,$(CAENHVWRAPPER_LIB)) -lcaenhvwrapper
 # ======================================================
 
 #=============================

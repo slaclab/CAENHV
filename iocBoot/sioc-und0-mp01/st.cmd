@@ -1,4 +1,4 @@
-#!../../bin/linuxRT-i686/CAENHV
+#!../../bin/rhel6-x86_64/CAENHV
 
 ## You may have to change CAENHV to something else
 ## everywhere it appears in this file
@@ -41,9 +41,11 @@ CAENHV_registerRecordDeviceDriver(pdbbase)
 #     userName,     # User name
 #     password)     # Password
 
+CAENHVAsynSetEpicsPrefix("HVPS:UND0:MP01:")
 # Crate located in B913 (node name: hvps-und0-mp01)
 CAENHVAsynConfig("${CAENHVASYN_PORT_B913}",3,"172.27.13.34","admin","admin")
 
+CAENHVAsynSetEpicsPrefix("HVPS:UND0:MP02:")
 # Crate located in B921 (node name: hvps-und0-mp02)
 CAENHVAsynConfig("${CAENHVASYN_PORT_B921}",3,"172.27.13.35","admin","admin")
 

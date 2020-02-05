@@ -35,7 +35,7 @@ DBD += CAENHV.dbd
 
 # Link QSRV (pvAccess Server) if available
 ifdef EPICS_QSRV_MAJOR_VERSION
-   CAENHV_LIBS +=git  qsrv
+   CAENHV_LIBS += qsrv
    CAENHV_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
    CAENHV_DBD += PVAServerRegister.dbd
    CAENHV_DBD += qsrv.dbd

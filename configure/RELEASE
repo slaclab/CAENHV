@@ -18,7 +18,7 @@
 IOCADMIN_MODULE_VERSION       = R3.1.16-1.2.0
 AUTOSAVE_MODULE_VERSION       = R5.8-2.1.0
 ASYN_MODULE_VERSION           = R4.31-0.1.0
-CAENHVASYN_MODULE_VERSION     = R1.1.1
+CAENHVASYN_MODULE_VERSION     = R1.1.2
 SEQ_MODULE_VERSION            = R2.2.4-1.2
 
 # ==========================================================

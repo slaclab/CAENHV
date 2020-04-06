@@ -26,6 +26,18 @@ DB_INSTALLS += $(CAENHVASYN)/db/longout.template
 DB += b921.db
 DB += b913.db
 
+# ========================================================
+# Install databases from iocAdmin package
+# These databases support IOC Health and Monitoring
+# ========================================================
+DB_INSTALLS += $(IOCADMIN)/db/iocAdminSoft.db
+DB_INSTALLS += $(IOCADMIN)/db/iocAdminScanMon.db
+DB_INSTALLS += $(IOCADMIN)/db/iocScanMonSum.db
+DB_INSTALLS += $(IOCADMIN)/db/iocScanMon.db
+DB_INSTALLS += $(SNCSEQ)/db/devSeqCar.db
+DB_INSTALLS += $(AUTOSAVE)/db/save_restoreStatus.db
+IOCRELEASE_DB += iocRelease.db
+
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
 # <anyname>_template = <templatename>

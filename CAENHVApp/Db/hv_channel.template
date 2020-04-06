@@ -1,6 +1,6 @@
-record(ao,      "$(P):$(AREA):$(POS):HV_CTL") {
+record(ao,      "$(P):$(AREA):$(POS):VSET") {
     field(PINI, "NO")
-    field(DESC, "Slot $(SLOT), Ch $(CH), V0Set")
+    field(DESC, "Slot $(SLOT), Ch $(CH), VSet")
     field(DTYP, "asynFloat64")
     field(SCAN, "Passive")
     field(EGU,  "V")
@@ -9,15 +9,82 @@ record(ao,      "$(P):$(AREA):$(POS):HV_CTL") {
     field(DRVL, "0")
     field(DRVH, "3000")
     field(OUT,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
+    info(autosaveFields, "VAL")
 }
 
-record(ai,      "$(P):$(AREA):$(POS):HV_CTL_RBV") {
+record(ai,      "$(P):$(AREA):$(POS):VSET_RBV") {
     field(PINI, "YES")
-    field(DESC, "Slot $(SLOT), Ch $(CH), V0Set RBV")
+    field(DESC, "Slot $(SLOT), Ch $(CH), VSet RBV")
     field(DTYP, "asynFloat64")
     field(SCAN, "1 second")
     field(EGU,  "V")
     field(LOPR, "0")
     field(HOPR, "3000")
     field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
+}
+record(ao,      "$(P):$(AREA):$(POS):ISET") {
+    field(PINI, "NO")
+    field(DESC, "Slot $(SLOT), Ch $(CH), ISet")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "Passive")
+    field(EGU,  "uA")
+    field(LOPR, "0")
+    field(HOPR, "3000")
+    field(DRVL, "0")
+    field(DRVH, "3000")
+    field(OUT,  "@asyn($(PORT))S$(SLOT)_C$(CH)_I0SET")
+    info(autosaveFields, "VAL")
+}
+
+record(ai,      "$(P):$(AREA):$(POS):ISET_RBV") {
+    field(PINI, "YES")
+    field(DESC, "Slot $(SLOT), Ch $(CH), ISet RBV")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "1 second")
+    field(EGU,  "uA")
+    field(LOPR, "0")
+    field(HOPR, "3000")
+    field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_I0SET")
+}
+
+record(ai,      "$(P):$(AREA):$(POS):VMON") {
+    field(PINI, "YES")
+    field(DESC, "Slot $(SLOT), Ch $(CH), VMON")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "1 second")
+    field(EGU,  "V")
+    field(LOPR, "0")
+    field(HOPR, "3000")
+    field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_VMON")
+}
+
+record(ai,      "$(P):$(AREA):$(POS):IMON") {
+    field(PINI, "YES")
+    field(DESC, "Slot $(SLOT), Ch $(CH), IMON")
+    field(DTYP, "asynFloat64")
+    field(SCAN, "1 second")
+    field(EGU,  "uA")
+    field(LOPR, "0")
+    field(HOPR, "3000")
+    field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_IMON")
+}
+
+record(calc,      "$(P):$(AREA):$(POS):RMON") {
+    field(PINI, "YES")
+    field(DESC, "Slot $(SLOT), Ch $(CH), RMON")
+    field(SCAN, "1 second")
+    field(EGU,  "MOhm")
+    field(INPA,  "$(P):$(AREA):$(POS):VMON")
+    field(INPB,  "$(P):$(AREA):$(POS):IMON")
+    field(CALC,  "(A/B)")
+}
+
+record(bo,      "$(P):$(AREA):$(POS):PWR") {
+    field(PINI, "NO")
+    field(DESC, "Slot $(SLOT), Ch $(CH), PWR")
+    field(DTYP, "asynUInt32Digital")
+    field(SCAN, "Passive")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    field(OUT,  "@asynMask($(PORT),0,1)S$(SLOT)_C$(CH)_PW")
 }

@@ -5,9 +5,9 @@ record(ao,      "$(P):$(AREA):$(POS):VSET") {
     field(SCAN, "Passive")
     field(EGU,  "V")
     field(LOPR, "0")
-    field(HOPR, "3000")
+    field(HOPR, "$(HIGH)")
     field(DRVL, "0")
-    field(DRVH, "3000")
+    field(DRVH, "$(HIGH)")
     field(OUT,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
     info(autosaveFields, "VAL")
 }
@@ -19,7 +19,7 @@ record(ai,      "$(P):$(AREA):$(POS):VSET_RBV") {
     field(SCAN, "1 second")
     field(EGU,  "V")
     field(LOPR, "0")
-    field(HOPR, "3000")
+    field(HOPR, "$(HIGH)")
     field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
 }
 record(ao,      "$(P):$(AREA):$(POS):ISET") {

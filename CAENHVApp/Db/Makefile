@@ -24,6 +24,7 @@ DB_INSTALLS += $(CAENHVASYN)/db/longout.template
 
 # These are application specific PV definitions
 DB += b921.db
+DB += b921_pmt.db
 DB += b913.db
 
 # ========================================================

@@ -77,6 +77,7 @@ asynSetTraceMask("${CAENHVASYN_PORT_B913}",0, 0)
 
 ## System in B921
 dbLoadRecords("db/b921.db","P=CBLM,PORT=${CAENHVASYN_PORT_B921}")
+dbLoadRecords("db/b921_pmt.db","P=PMT,PORT=${CAENHVASYN_PORT_B921}")
 
 ## System in B913
 dbLoadRecords("db/b913.db","P=CBLM,PORT=${CAENHVASYN_PORT_B913}")

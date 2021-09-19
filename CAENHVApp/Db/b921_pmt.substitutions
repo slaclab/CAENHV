@@ -1,0 +1,5 @@
+file "hv_channel.template" { pattern
+{ AREA,     POS,        SLOT,   CH,    HIGH     }
+{ "DMPS",   "431",     "02",   "21", "1000"    }
+{ "DMPH",   "431",     "02",   "22", "1000"    }
+}

@@ -3,6 +3,9 @@
 Release notes for the CAEN HV Power Supply IOC.
 
 ## Releases:
+* __R1.1.1__: 2022-01-13 J. Mock
+  * Add BLMH47 to B921
+
 * __R1.1.0__: 2021-09-18 J. Mock
   * Add PMTs to ch 21 and 22 of slot 2 in B921
 

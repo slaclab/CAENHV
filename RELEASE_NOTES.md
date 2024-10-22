@@ -3,6 +3,11 @@
 Release notes for the CAEN HV Power Supply IOC.
 
 ## Releases:
+* __R2.0.0__: 2024-10-22 J. Mock
+  * Build against CAENHVAsyn R2.0.0
+  * Build as rhel7 instead of rhel6
+  * Add SXR CBLMs to B913 for LCLS-II-HE
+
 * __R1.1.0__: 2021-09-18 J. Mock
   * Add PMTs to ch 21 and 22 of slot 2 in B921
 

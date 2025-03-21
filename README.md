@@ -1,5 +1,7 @@
 # CAEN HV Power Supply EPICS IOC
 
+[DOE Code](https://www.osti.gov/doecode/biblio/78179)
+
 ## Description 
 
 EPICS IOC to control CAEN HV Power Supplies. 

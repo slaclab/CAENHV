@@ -3,6 +3,10 @@
 Release notes for the CAEN HV Power Supply IOC.
 
 ## Releases:
+* __R3.0.0__: 2025-06-24 J. Mock
+  * Building for rhel9
+  * Changing PINI for VSET and ISET
+
 * __R2.0.0__: 2024-10-22 J. Mock
   * Build against CAENHVAsyn R2.0.0
   * Build as rhel7 instead of rhel6

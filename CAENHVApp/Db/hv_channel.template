@@ -1,5 +1,5 @@
 record(ao,      "$(P):$(AREA):$(POS):VSET") {
-    field(PINI, "NO")
+    field(PINI, "YES")
     field(DESC, "Slot $(SLOT), Ch $(CH), VSet")
     field(DTYP, "asynFloat64")
     field(SCAN, "Passive")
@@ -23,7 +23,7 @@ record(ai,      "$(P):$(AREA):$(POS):VSET_RBV") {
     field(INP,  "@asyn($(PORT))S$(SLOT)_C$(CH)_V0SET")
 }
 record(ao,      "$(P):$(AREA):$(POS):ISET") {
-    field(PINI, "NO")
+    field(PINI, "YES")
     field(DESC, "Slot $(SLOT), Ch $(CH), ISet")
     field(DTYP, "asynFloat64")
     field(SCAN, "Passive")
@@ -80,11 +80,12 @@ record(calc,      "$(P):$(AREA):$(POS):RMON") {
 }
 
 record(bo,      "$(P):$(AREA):$(POS):PWR") {
-    field(PINI, "NO")
+    field(PINI, "YES")
     field(DESC, "Slot $(SLOT), Ch $(CH), PWR")
     field(DTYP, "asynUInt32Digital")
     field(SCAN, "Passive")
     field(ZNAM, "OFF")
     field(ONAM, "ON")
     field(OUT,  "@asynMask($(PORT),0,1)S$(SLOT)_C$(CH)_PW")
+    info(autosaveFields, "VAL")
 }

@@ -1,4 +1,4 @@
-#!../../bin/rhel7-x86_64/CAENHV
+#!../../bin/rhel9-x86_64/CAENHV
 
 ## You may have to change CAENHV to something else
 ## everywhere it appears in this file

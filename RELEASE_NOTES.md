@@ -3,7 +3,7 @@
 Release notes for the CAEN HV Power Supply IOC.
 
 ## Releases:
-* __R3.0.0__: 2025-06-24 J. Mock
+* __R3.0.0__: 2025-06-24 K. Leleux (kleleux)
   * Building for rhel9
   * Changing PINI for VSET and ISET
 

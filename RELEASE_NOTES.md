@@ -3,6 +3,13 @@
 Release notes for the CAEN HV Power Supply IOC.
 
 ## Releases:
+* __R3.1.0-b__: 2025-08-19 J. Mock (jmock)
+  * -b in tag name means broken - the B913 unit is currently broken and
+      commented out
+  * Complete rhel9 upgrade:
+    * Update .so libraries for CAEM, asyn, autosave, ioc stats, pv, seq, seqCar
+    * Add .so libraries for curses, readline, and tinfo
+
 * __R3.0.0__: 2025-06-24 K. Leleux (kleleux)
   * Building for rhel9
   * Changing PINI for VSET and ISET

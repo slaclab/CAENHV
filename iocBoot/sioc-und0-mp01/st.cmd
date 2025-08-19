@@ -46,13 +46,14 @@ CAENHV_registerRecordDeviceDriver(pdbbase)
 #     userName,     # User name
 #     password)     # Password
 
-CAENHVAsynSetEpicsPrefix("HVPS:UND0:MP01:")
+# Crate in B913 is broken right now
+#CAENHVAsynSetEpicsPrefix("HVPS:UND0:MP01:")
 # Crate located in B913 (node name: hvps-und0-mp01)
-CAENHVAsynConfig("${CAENHVASYN_PORT_B913}",3,"172.27.13.34","admin","admin")
+#CAENHVAsynConfig("${CAENHVASYN_PORT_B913}",3,"172.27.13.35","admin","admin")
 
 CAENHVAsynSetEpicsPrefix("HVPS:UND0:MP02:")
 # Crate located in B921 (node name: hvps-und0-mp02)
-CAENHVAsynConfig("${CAENHVASYN_PORT_B921}",3,"172.27.13.35","admin","admin")
+CAENHVAsynConfig("${CAENHVASYN_PORT_B921}",3,"172.27.13.34","admin","admin")
 
 # ===========================================
 #               ASYN MASKS
@@ -80,7 +81,7 @@ dbLoadRecords("db/b921.db","P=CBLM,PORT=${CAENHVASYN_PORT_B921}")
 dbLoadRecords("db/b921_pmt.db","P=PMT,PORT=${CAENHVASYN_PORT_B921}")
 
 ## System in B913
-dbLoadRecords("db/b913.db","P=CBLM,PORT=${CAENHVASYN_PORT_B913}")
+#dbLoadRecords("db/b913.db","P=CBLM,PORT=${CAENHVASYN_PORT_B913}")
 
 dbLoadRecords("db/iocAdminSoft.db", "IOC=$(IOC_NAME)")
 dbLoadRecords("db/iocRelease.db"   ,"IOC=$(IOC_NAME)")
